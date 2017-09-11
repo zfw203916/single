@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,html{
+            padding:0;
+            margin:0;
+        }
+
+        body {
+            background-image: url(images/index_02.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            padding-top: 754px;
+        }
+
+        .test{
+            /*background-color: aqua;*/
+            /*height: 176px;*/
+            /*padding-bottom: 2.250em;*/
+            /*margin-bottom: 2.250em;*/
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#090484+0,090381+44,080262+100 */
+            /*background: rgb(9,4,132); !* Old browsers *!*/
+            /*background: -moz-linear-gradient(top, rgba(9,4,132,1) 0%, rgba(9,3,129,1) 44%, rgba(8,2,98,1) 100%); !* FF3.6-15 *!*/
+            /*background: -webkit-linear-gradient(top, rgba(9,4,132,1) 0%,rgba(9,3,129,1) 44%,rgba(8,2,98,1) 100%); !* Chrome10-25,Safari5.1-6 *!*/
+            /*background: linear-gradient(to bottom, rgba(9,4,132,1) 0%,rgba(9,3,129,1) 44%,rgba(8,2,98,1) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+            /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090484', endColorstr='#080262',GradientType=0 ); !* IE6-9 *!*/
+            background-color: #090492;
+        }
+        .test2{
+            max-width: 1080px;
+            width: 100%;
+            height: inherit;
+            margin:auto;
+            /*background-color: #EEEEEE;*/
+            margin-bottom: 2.250em;
+
+        }
+        .test3{
+            /*max-width: 450px;*/
+            width: 50%;
+            /*background-color: blue;*/
+            position: relative;
+            height: inherit;
+        }
+
+        .test3 img{
+            max-width: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        .test4{
+            width: 132px;
+            height: 132px;
+            border: 10px solid #480495;
+            border-radius:50%;
+            position: absolute;
+            left: 0;
+            top:0;
+            z-index: 1;
+            background-color: green;
+        }
+        .test5{
+            width: 450px;
+            height: 100px;
+            bottom:0;
+            background-color: #480495;
+            position: absolute;
+        }
+
+        .float-left{
+            float:left;
+        }
+        .clear-both{
+            clear: both;
+        }
+
+        .main-content{
+            width: 100%;
+            background-color: #070029;
+            padding-bottom: 1px;
+        }
+        .main-heading{
+            width: 100%;
+            height: 134px;
+            /*background-color: #07013f;*/
+            margin: auto;
+            position: relative;
+        }
+
+        .main-heading-base{
+            width: 100%;
+            height: 49px;
+            background-color: #371262;
+            bottom: 0;
+            position: absolute;
+        }
+
+        .main-heading-trapezoid{
+            max-width: 1580px;
+            width: 100%;
+            height: 70px;
+            /*background-color: #371262;*/
+            bottom: 49px;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 70px solid #371262;
+            border-left: 330px solid transparent;
+            border-right: 330px solid transparent;
+            left: 0;
+            right: 0;
+        }
+
+        .main-button{
+            max-width: 460px;
+            width: 100%;
+            height: 107px;
+            margin: auto;
+            background-color: pink;
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            right: 0;
+            border-radius: 60px;
+        }
+
+        .main-button img{
+            border-radius: 40px;
+        }
+
+        .main-heading-top{
+            width: 100%;
+            height: 15px;
+            background-color: #090492;
+        }
+
+        /*.main-heading-top img{*/
+            /*display: block;*/
+            /*margin: auto;*/
+            /*max-width: 100%;*/
+        /*}*/
+
+        .contents{
+            max-width: 1080px;
+            padding-top: 34px;
+            padding-left:26px;
+            padding-right: 26px;
+            padding-bottom: 29px;
+            margin: auto;
+            background-color: #210842;
+            margin-bottom: 48px;
+        }
+
+        .av-thumbnail-container{
+            /*display: flex;*/
+            width: inherit;
+        }
+        .av-thumbnail{
+            width: 25%;
+            /*width: 100%;*/
+            /*height: 232px;*/
+            /*background-color: blue;*/
+            /*flex-basis: 220px;*/
+        }
+
+        .av-thumbnail img{
+            /*max-width: 220px;*/
+            max-width: 100%;
+            display: block;
+            /*width: 100%;*/
+            margin:auto;
+        }
+
+        .av-thumbnail:nth-child(1){
+            /*margin-left: 45px;*/
+            /*margin-right: 37px;*/
+            /*background-color: azure;*/
+        }
+        .av-thumbnail:nth-child(2){
+            /*margin-right: 37px;*/
+            /*background-color: red;*/
+        }
+        .av-thumbnail:nth-child(3){
+            /*margin-right: 37px;*/
+            /*background-color: rebeccapurple;*/
+        }
+
+        .av-button{
+            max-width: 1080px;
+            margin:auto;
+            height: 150px;
+            /*background-color: blueviolet;*/
+        }
+        .av-button img{
+            max-width: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        .video-thumbnail-container{
+            /*display: flex;*/
+            /*flex-wrap: wrap;*/
+            width: inherit;
+        }
+
+
+
+        .video-thumbnail{
+            /*max-width: 328px;*/
+            /*height: 208px;*/
+            width: 33.3%;
+            /*background-color: pink;*/
+            /*box-sizing: border-box;*/
+            /*flex-basis: 328px;*/
+            /*margin-bottom: 22px;*/
+            /*margin-right: 22px;*/
+            /*margin-left: 10px;*/
+        }
+
+        .video-thumbnail:nth-child(1),
+        .video-thumbnail:nth-child(2),
+        .video-thumbnail:nth-child(3){
+            margin-bottom: 22px;
+        }
+
+
+        .video-thumbnail img{
+            /*max-width: 100px;*/
+            /*width: 100%;*/
+            max-width: 100%;
+            display: block;
+            margin: auto;
+        }
+        .footer{
+            height: 119px;
+            width: 100%;
+            background: url("images/index_48.jpg") no-repeat center;
+            background-color: aliceblue;
+        }
+
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        .modal {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            display: none;
+            padding: 0 20px;
+            z-index: 2;
+        }
+
+        .modal-inner {
+            background-color: #fff;
+            /*border-radius: 3px;*/
+            max-width: 60%;
+            /*height: 90%;*/
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        /* So the scrollbar calculation is correct. */
+        body {
+            margin: 0;
+        }
+
+        .modal-content h2{
+            background-color:  #E4007F;
+            color: #ffffff;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            margin: 0;
+            font-weight: normal;
+            font-size: 2.5em;
+            width: 100%;
+        }
+
+        .modal-content ul{
+            background-color:   #EEEEEE;
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            list-style: none;
+            font-size:1.2em;
+        }
+
+        .modal-content ul li{
+            padding: 2px 10px;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-right: -10px;
+            cursor: pointer;
+        }
+
+
+        .close-heading{
+            height: 40px;
+        }
+
+        .modal-video {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: none;
+            padding: 0 20px;
+            z-index: 2;
+        }
+
+        .modal-video video{
+            margin: auto;
+            display: block;
+            position: relative;
+            top: 40%;
+            transform: translateY(-50%);
+        }
+
+        .av-thumbnail:hover{
+            background: url("images/index_20.jpg") no-repeat center;
+            cursor: pointer;
+        }
+
+        #open img:hover{
+            cursor: pointer;
+        }
+        #open2:hover{
+            cursor: pointer;
+        }
+
+        .video-thumbnail img:hover{
+            cursor: pointer;
+        }
+        #av-picture1:hover,#av-picture2:hover,#av-picture3:hover,#av-picture4:hover{
+            background: url("images/index_20.jpg") no-repeat center;
+        }
+
+        #av-picture1{
+            max-width: 220px;
+            height: 232px;
+            background: url("images/index_18.jpg") no-repeat center;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        #av-picture2{
+            max-width: 220px;
+            height: 232px;
+            background: url("images/index_22.jpg") no-repeat center;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        #av-picture3{
+            max-width: 220px;
+            height: 232px;
+            background: url("images/index_22.jpg") no-repeat center;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        #av-picture4{
+            max-width: 220px;
+            height: 232px;
+            background: url("images/index_24.jpg") no-repeat center;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        .sticky-rightbanner{
+            position: fixed;
+            right: 0;
+            top: 20%;
+            width: 180px;
+            height: 351px;
+            background: url('images/sticky-rightbanner.png') no-repeat;
+        }
+
+        @media only screen
+        and (min-device-width: 320px)
+        and (max-device-width: 480px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+            .modal-inner {
+                background-color: #fff;
+                /*border-radius: 3px;*/
+                max-width: 90%;
+                /*height: 90%;*/
+                margin: 50px auto;
+                padding: 20px;
+            }
+
+            .modal-content h2{
+                background-color:  #E4007F;
+                color: #ffffff;
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                margin: 0;
+                font-weight: normal;
+                font-size: 2.5em;
+                width: 100%;
+            }
+
+            .modal-content ul{
+                background-color:   #EEEEEE;
+                margin: 0;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                list-style: none;
+                font-size:0.8em;
+            }
+
+            .sticky-rightbanner{
+                top: 30%;
+            }
+        }
+
+        /*.av-thumbnail:nth-child(1){*/
+            /*!*margin-left: 45px;*!*/
+            /*background: url("images/index_18.jpg") no-repeat center;*/
+        /*}*/
+
+        /*.av-thumbnail:nth-child(2){*/
+            /*margin-left: 37px;*/
+            /*background: url("images/index_22.jpg") no-repeat center;*/
+        /*}*/
+
+        /*.av-thumbnail:nth-child(3){*/
+            /*!*margin-left: 37px;*!*/
+            /*background: url("images/index_22.jpg") no-repeat center;*/
+        /*}*/
+
+        /*.av-thumbnail:nth-child(4){*/
+            /*!*margin-left: 37px;*!*/
+            /*background: url("images/index_24.jpg") no-repeat center;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="test">
+    <div class="test2">
+        <div class="test3 float-left" id="open">
+            <img src="images/index_04.jpg" alt="">
+            <!--<div class="test4">-->
+            <!--</div>-->
+            <!--<div class="test5">-->
+            <!--</div>-->
+        </div>
+        <div class="test3 float-left">
+            <img src="images/index_06.jpg" alt="" id="open2">
+            <!--<div class="test4">-->
+            <!--</div>-->
+            <!--<div class="test5">-->
+            <!--</div>-->
+        </div>
+        <div class="clear-both"></div>
+
+    </div>
+    <div class="main-heading">
+        <div class="main-heading-top">
+            <div class="main-button">
+                <img src="images/index_11.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="main-heading-trapezoid"></div>
+        <div class="main-heading-base"></div>
+    </div>
+</div>
+<div class="main-content">
+
+    <div class="contents">
+        <div class="av-thumbnail-container">
+            <div class="av-thumbnail float-left">
+                <div id="av-picture1"></div>
+                <!--<img class="av-picture" src="images/index_18.jpg" alt="">-->
+            </div>
+            <div class="av-thumbnail float-left">
+                <div id="av-picture2"></div>
+                <!--<img class="av-picture" src="images/index_22.jpg" alt="">-->
+            </div>
+            <div class="av-thumbnail float-left">
+                <div id="av-picture3"></div>
+                <!--<img class="av-picture" src="images/index_22.jpg" alt="">-->
+            </div>
+            <div class="av-thumbnail float-left">
+                <div id="av-picture4"></div>
+                <!--<img class="av-picture" src="images/index_24.jpg" alt="">-->
+            </div>
+            <div class="clear-both"></div>
+        </div>
+        <div class="av-button">
+            <img src="images/index_27.jpg" alt="">
+        </div>
+        <div class="video-thumbnail-container">
+            <div class="video-thumbnail float-left">
+                <img class="video-image" src="images/index_31.jpg" alt="">
+            </div>
+            <div class="video-thumbnail float-left">
+                <img class="video-image" src="images/index_33.jpg" alt="">
+            </div>
+            <div class="video-thumbnail float-left">
+                <img class="video-image" src="images/index_35.jpg" alt="">
+            </div>
+            <div class="video-thumbnail float-left">
+                <img class="video-image" src="images/index_39.jpg" alt="">
+            </div>
+            <div class="video-thumbnail float-left">
+                <img class="video-image" src="images/index_41.jpg" alt="">
+            </div>
+            <div class="video-thumbnail float-left">
+                <img class="video-image" src="images/index_43.jpg" alt="">
+            </div>
+            <div class="clear-both"></div>
+        </div>
+    </div>
+</div>
+<div class="footer"></div>
+<div id="modal" class="modal">
+    <div class="modal-inner">
+
+        <div class="close-heading"><span class="close" id="close">&times;</span></div>
+
+
+        <div class="modal-content">
+            <h2>亡整齢学表対</h2>
+            <ul>
+                <li>1. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>2. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>3. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>4. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>5. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>6. 者期今担食康泉試更馬俊戦真庁力。</li>
+            </ul>
+        </div>
+        <div class="modal-content">
+            <h2>亡整齢学表対</h2>
+            <ul>
+                <li>1. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>2. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>3. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>4. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>5. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>6. 者期今担食康泉試更馬俊戦真庁力。</li>
+            </ul>
+        </div>
+        <div class="modal-content">
+            <h2>亡整齢学表対</h2>
+            <ul>
+                <li>1. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>2. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>3. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>4. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>5. 者期今担食康泉試更馬俊戦真庁力。</li>
+                <li>6. 者期今担食康泉試更馬俊戦真庁力。</li>
+            </ul>
+        </div>
+        <div class="modal-content">
+            <h2>亡整齢学表対</h2>
+            <ul>
+            <li>1. 者期今担食康泉試更馬俊戦真庁力。</li>
+            <li>2. 者期今担食康泉試更馬俊戦真庁力。</li>
+            <li>3. 者期今担食康泉試更馬俊戦真庁力。</li>
+            <li>4. 者期今担食康泉試更馬俊戦真庁力。</li>
+            <li>5. 者期今担食康泉試更馬俊戦真庁力。</li>
+            <li>6. 者期今担食康泉試更馬俊戦真庁力。</li>
+        </ul>
+        </div>
+
+        </div>
+</div>
+
+<div class="modal-video" id="modal-video">
+        <video  width="852" height="480" controls>
+            <source src="videos/test.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+</div>
+
+<div class="sticky-rightbanner">
+
+</div>
+
+<script src="js/jQuery-1.10.2.min.js"></script>
+
+<script>
+    function openModal(modal) {
+        // Note: fixed elements will also need the margin
+        // adjustment (like a fixed header, if you have one).
+        var scrollBarWidth = window.innerWidth - document.body.offsetWidth;
+        document.body.style.margin = '0px ' + scrollBarWidth + 'px 0px 0px';
+        document.body.style.overflow = 'hidden';
+        modal.style.display = 'block';
+    };
+
+    function closeModal(modal) {
+        document.body.style.margin = '';
+        document.body.style.overflow = '';
+        modal.style.display = 'none';
+    };
+
+    // I prefer to generate and dynamically insert the modal
+    // but for this demonstration it is already in the markup.
+    var modal = document.getElementById('modal');
+
+    // Clicking outside the inner modal content should close it.
+    modal.addEventListener('click', function () {
+        closeModal(modal);
+    });
+
+    var closeButton = document.getElementById('close');
+
+    closeButton.addEventListener('click',function () {
+       closeModal(modal);
+    });
+
+    for (var i = 0; i <  modal.childNodes.length; i++) {
+        modal.childNodes[i].addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
+    }
+
+    // Open the modal when open button is pressed.
+    document.getElementById('open').addEventListener('click', function (event) {
+        event.preventDefault();
+        openModal(modal);
+    });
+
+    // Open the modal when open button is pressed.
+    document.getElementById('open2').addEventListener('click', function (event) {
+        event.preventDefault();
+        openModal(modal);
+    });
+
+
+    $('.video-thumbnail').click(function () {
+//        document.body.style.overflow = 'hidden';
+        $('.modal-video').fadeIn();
+    });
+
+    $('.modal-video').click(function () {
+//        document.body.style.overflow = 'auto';
+		e.preventBubble();
+        $('.modal-video').fadeOut();
+    });
+
+
+
+</script>
+</body>
+</html>
